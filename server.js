@@ -10,3 +10,9 @@ app.listen(2000, () => {
         console.log(String(data));
     });
 });
+app.use(cors({origin: "*"}))
+// Seiten Routen
+
+// API Routen
+
+// Intern Routen
