@@ -16,3 +16,6 @@ app.use(cors({origin: "*"}))
 // API Routen
 
 // Intern Routen
+// Signatur
+const SIGNATUR = require("/Routen/Intern/signatur");
+app.use("/", SIGNATUR);
