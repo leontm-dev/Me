@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Diplomata+SC&family=Josefin+Sans:wght@500&family=Kdam+Thmor+Pro&family=Mulish:wght@500&family=Oswald&family=Zen+Dots&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu-button {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+}
+.menu-button:hover {
+    cursor: pointer;
+}
+.menu {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 300px;
+    background-color: #eae2b7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+}
+.menu-item {
+    position: relative;
+    width: 250px;
+    margin-left: 25px;
+    height: 60px;
+}
+.menu-item-img {
+    position: relative;
+    margin: 10px;
+    height: 40px;
+    width: 40px;
+    float: left;
+}
+.menu-item-name {
+    position: relative;
+    margin: 0;
+    height: 60px;
+    font-size: 1.75em;
+    font-family: "Mulish";
+    vertical-align: middle;
+    line-height: 60px;
+    color: #003049;
+}
+.menu-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 30px;
+    width: 30px;
+}
+.menu-close:hover {
+    cursor: pointer;
+}
+.inMenu {
+    animation: inMenu 2s;
+};
+@keyframes inMenu {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 300px;
+    }
+}
+.out {
+    animation: out 2s;
+}
+@keyframes out {
+    from {
+        width: 300px;
+    }
+    to {
+        width: 0px;
+    }
+}
