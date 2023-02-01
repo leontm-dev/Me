@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Diplomata+SC&family=Josefin+Sans:wght@500&family=Kdam+Thmor+Pro&family=Mulish:wght@500&family=Oswald&family=Zen+Dots&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.background {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: #fcbf49;
+    justify-content: center;
+    display: flex;
+}
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.title {
+    position: absolute;
+    top: 40%;
+    font-size: 200px;
+    font-family: "Mulish";
+    width: 90%;
+    left: 5%;
+    text-align: center;
+}
+.text {
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    text-align: center;
+    font-family: "Mulish";
+    width: 90%;
+    font-size: 60px;
+}
