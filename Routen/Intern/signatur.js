@@ -4,11 +4,10 @@ const editJSON = require("edit-json-file");
 const fs = require("fs");
 // Router Einstellungen
 const router = express.Router();
-router.use(express.json());
 // Datenbank Einstellungen
 const LEVEL3 = editJSON("Daten/Keys/level-3.json");
 // Routen
-router.get("/api/dev/signatur", (req, res) => {
+router.get("/", (req, res) => {
     if (req.headers["authorization"] != "") {
         if (LEVEL3.get(req.headers["authorization"]) != undefined) {
             res.status(200).json(
@@ -17,7 +16,7 @@ router.get("/api/dev/signatur", (req, res) => {
                     message: "Success"
                 }
             ).send(function () {
-                    fs.readFile("/Daten/Signatur/signatur.txt", (err, data) => {
+                    fs.readFile("./Daten/Signatur/signatur.txt", (err, data) => {
                         return data
                     });
                 }
