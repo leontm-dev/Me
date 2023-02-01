@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeonTM</title>
+    <link rel="stylesheet" href="/Alle/menu.css">
+    <link rel="stylesheet" href="/Index/Folie1/style.css">
+</head>
+<body>
+    <div class="background" id="background">
+        <img class="menu-button" src="/Images/Black/Mehr-Punkte.png" id="menu-button" onclick="openMenu()">
+        <div class="menu hide" id="menu">
+            <img class="menu-close hide" id="menu-close" src="/Images/Black/Schließen.png" onclick="closeMenu()">
+            <div class="menu-item hide" id="menu-item-1" onclick="openMenuHome()" title="Home">
+                <img class="menu-item-img" src="/Images/Black/Home.png">
+                <div class="menu-item-name">Home</div>
+            </div>
+            <div class="menu-item hide" id="menu-item-2" onclick="openMenuRegister()" title="Registrieren">
+                <img class="menu-item-img" src="/Images/Black/Nutzer.png">
+                <div class="menu-item-name">Registrieren</div>
+            </div>
+            <div class="menu-item hide" id="menu-item-3" onclick="openMenuGames()" title="Games">
+                <img class="menu-item-img" src="/Images/Black/Controller.png">
+                <div class="menu-item-name">Games</div>
+            </div>
+            <div class="menu-item hide" id="menu-item-4" onclick="openMenuImprint()" title="Impressum">
+                <img class="menu-item-img" src="/Images/Black/Help.png">
+                <div class="menu-item-name">Impressum</div>
+            </div>
+            <div class="menu-item hide" id="menu-item-5" onclick="openMenuDatenschutz()" title="Home">
+                <img class="menu-item-img" src="/Images/Black/Schild.png">
+                <div class="menu-item-name">Datenschutz</div>
+            </div>
+        </div>
+        <div class="interface" id="interface">
+            <button class="interface-last-folie" id="interface-last-folie" onclick="goToLastFolie()"><img src="/Images/Black/Pfeil-Kurz-Links.png"></button>
+            
+            <button class="interface-next-folie" id="interface-next-folie" onclick="goToNextFolie()"><img src="/Images/Black/Pfeil-Kurz-Rechts.png"></button>
+        </div>
+    </div>
+    <script src="/Alle/menu.js"></script>
+    <script src="/Index/Folie1/script.js"></script>
+</body>
+</html>
