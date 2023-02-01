@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeonTM</title>
+    <link rel="stylesheet" href="/Alle/popup.css">
+    <link rel="stylesheet" href="/Alle/menu.css">
+    <link rel="stylesheet" href="/Index/Start/style.css">
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="popup-background" id="popup-background">
+        <div class="popup" id="popup">
+            <div class="popup-title" id="popup-title">Cookies</div>
+            <div class="popup-infos" id="popup-infos">Diese Seite benutzt keinerlei Cookies.</div>
+            <div class="popup-list" id="popup-list">
+                <div class="popup-list-item" id="popup-list-item-1">
+                    <img class="popup-item-img popup-negative" src="/Images/Black/Schließen.png">
+                    <div class="popup-item-title">Sammlung von Daten</div>
+                    <div class="popup-item-more">Diese Seite sammelt keine Daten von Ihnen, ohne, dass Sie vorher informiert worden sind und Sie die Sammlung von Daten durch eine Anmeldung mit ihrem Account akzeptiert hätten:</div>
+                </div>
+                <div class="popup-list-item" id="popup-list-item-2">
+                    <img class="popup-item-img popup-negative" src="/Images/Black/Schließen.png">
+                    <div class="popup-item-title">Speichern von IPs</div>
+                    <div class="popup-item-more">Diese Seite speichert keine IP-Adressen. Dies führt dazu, dass Sie bei jedem Öffnen einer Seite mit Anmeldevorgang diesen durchführen müssen.</div>
+                </div>
+                <div class="popup-list-item" id="popup-list-item-3">
+                    <img class="popup-item-img popup-negative" src="/Images/Black/Schließen.png">
+                    <div class="popup-item-title">Zugriff auf Standort, Kamera o. Mikrofon</div>
+                    <div class="popup-item-more">Diese Seite greift nicht auf ihren Standort (siehe Punkt 2) zu. Außerdem werden Ihre Kamera und Ihr Mikrofon nicht ohne vorherige Zustimmung benutzt.</div>
+                </div>
+            </div>
+            <button class="popup-button popup-button-accept" id="popup-button-accept" onclick="allCookies()">Auswahl bestätigen!</button>
+            <button class="popup-button popup-button-decline" id="popup-button-decline" onclick="noCookies()">Nötige Auswahl bestätigen! (Keine Cookies)</button>
+        </div>
+    </div>
+    <div class="background" id="background">
+        <img class="menu-button" src="/Images/Black/Mehr-Punkte.png" id="menu-button" onclick="openMenu()">
+        <div class="menu hide" id="menu">
+            <img class="menu-close hide" id="menu-close" src="/Images/Black/Schließen.png" onclick="closeMenu()">
+            <div class="menu-item hide" id="menu-item-1" onclick="openMenuHome()" title="Home">
+                <img class="menu-item-img" src="/Images/Black/Home.png">
+                <div class="menu-item-name">Home</div>
+            </div>
+            <div class="menu-item hide" id="menu-item-2" onclick="openMenuRegister()" title="Registrieren">
+                <img class="menu-item-img" src="/Images/Black/Nutzer.png">
+                <div class="menu-item-name">Registrieren</div>
+            </div>
+            <div class="menu-item hide" id="menu-item-3" onclick="openMenuGames()" title="Games">
+                <img class="menu-item-img" src="/Images/Black/Controller.png">
+                <div class="menu-item-name">Games</div>
+            </div>
+            <div class="menu-item hide" id="menu-item-4" onclick="openMenuImprint()" title="Impressum">
+                <img class="menu-item-img" src="/Images/Black/Help.png">
+                <div class="menu-item-name">Impressum</div>
+            </div>
+            <div class="menu-item hide" id="menu-item-5" onclick="openMenuDatenschutz()" title="Home">
+                <img class="menu-item-img" src="/Images/Black/Schild.png">
+                <div class="menu-item-name">Datenschutz</div>
+            </div>
+        </div>
+        <img class="logo" id="logo" src="/Images/Leon™.png">
+        <div class="title" id="title">Leon™</div>
+        <div class="intro" id="intro"><span>Tacho</span> ich bin Leon™, ein junger Developer aus Deutschland. Wenn du mehr über mich und meine Projekte erfahren willst, schau dir gerne mal meine Präsentation an (<span>einfach auf Start > klicken</span>)</div>
+        <button class="start-presi" id="start-presi" onclick="startPresentation()"><div>Starten</div><img src="/Images/d62828/Pfeil-Kurz-Rechts.png"></button>
+        <button class="skip-presi" id="skip-presi" onclick="skipPresentation()"><div>Überspringen</div><img src="/Images/Black/Pfeil-Lang-Rechts.png"></button>
+    </div>
+    <script src="/Alle/popup.js"></script>
+    <script src="/Alle/menu.js"></script>
+    <script src="/Index/Start/script.js"></script>
+</body>
+</html>
