@@ -24,12 +24,17 @@ body {
     flex-direction: column;
     justify-content: space-around;
     height: 100vh;
+    z-index: 200;
 }
 .menu-item {
     position: relative;
     width: 250px;
     margin-left: 25px;
     height: 60px;
+    z-index: 201;
+}
+.menu-item:hover {
+    cursor: pointer;
 }
 .menu-item-img {
     position: relative;
