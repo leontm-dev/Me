@@ -5,6 +5,7 @@ const menuItem2 = document.getElementById("menu-item-2");
 const menuItem3 = document.getElementById("menu-item-3");
 const menuItem4= document.getElementById("menu-item-4");
 const menuItem5 = document.getElementById("menu-item-5");
+const menuItem6 = document.getElementById("menu-item-6");
 const menuClose = document.getElementById("menu-close");
 const menuButton = document.getElementById("menu-button");
 const MAINURL = "http://localhost:2000";
@@ -18,6 +19,7 @@ function openMenu() {
     menuItem3.classList.remove("hide");
     menuItem4.classList.remove("hide");
     menuItem5.classList.remove("hide");
+    menuItem6.classList.remove("hide");
 };
 function closeMenu() {
     menuClose.classList.add("hide");
@@ -26,6 +28,7 @@ function closeMenu() {
     menuItem3.classList.add("hide");
     menuItem4.classList.add("hide");
     menuItem5.classList.add("hide");
+    menuItem6.classList.add("hide");
     menu.classList.add("out");
     menuButton.classList.remove("hide");
     setTimeout(() => {
@@ -47,4 +50,7 @@ function openMenuImprint() {
 };
 function openMenuDatenschutz() {
     window.location.href = `${MAINURL}/datenschutz`;
+};
+function openMenuBots() {
+    window.location.href = `${MAINURL}/bots`;
 };
