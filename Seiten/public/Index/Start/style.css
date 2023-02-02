@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Diplomata+SC&family=Josefin+Sans:wght@500&family=Kdam+Thmor+Pro&family=Mulish:wght@500&family=Oswald&family=Zen+Dots&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.background {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: #fcbf49;
+}
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.title {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    font-size: 150px;
+    font-family: "Zen Dots";
+}
+.intro {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    font-size: 40px;
+    font-family: "Mulish";
+    width: 60%;
+}
+.intro span {
+    font-size: 50px;
+    font-family: "Anton";
+}
+.start-presi {
+    position: absolute;
+    bottom: 15%;
+    left: 25%;
+    width: 20%;
+    height: 60px;
+    background-color: #003049;
+    border: none;
+    box-shadow: #d62828 3px 3px 2px;
+}
+.start-presi:hover {
+    cursor: pointer;
+}
+.start-presi img {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+}
+.start-presi div {
+    position: absolute;
+    top: 0px;
+    left: 60px;
+    width: calc(100% - 120px);
+    text-align: center;
+    height: 100%;
+    color: #d62828;
+    font-size: 2em;
+    font-family: "Zen Dots";
+    vertical-align: middle;
+    line-height: 60px;
+}
+.skip-presi {
+    position: absolute;
+    bottom: 15%;
+    right: 25%;
+    width: 20%;
+    height: 60px;
+    background-color: #003049;
+    border: none;
+    box-shadow: #d62828 3px 3px 2px;
+}
+.skip-presi img {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+}
+.skip-presi div {
+    position: absolute;
+    top: 0px;
+    left: 60px;
+    width: calc(100% - 120px);
+    text-align: center;
+    height: 100%;
+    color: #d62828;
+    font-size: 2em;
+    font-family: "Zen Dots";
+    vertical-align: middle;
+    line-height: 60px;
+}
+.skip-presi:hover {
+    cursor: pointer;
+}
