@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Allan&family=Amatic+SC:wght@700&family=Covered+By+Your+Grace&family=Itim&family=Lobster&family=Mulish&family=Orbitron&family=Permanent+Marker&family=Rubik+Vinyl&family=Sassy+Frass&family=Sevillana&family=Shadows+Into+Light&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+.background {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100%;
+    background-color: #FCBF49;
+}
+.page-title {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 90%;
+    font-size: 150px;
+    font-family: "Permanent Marker";
+    text-align: center;
+}
+.page-intro {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    width: 90%;
+    font-size: 50px;
+    font-family: "Mulish";
+    text-align: center;
+}
+.signup-discord {
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    width: 20%;
+    border: none;
+    border-radius: 40px;
+    background-color: #5865F2;
+    height: 70px;
+}
+.signup-discord img {
+    position: absolute;
+    top: 10px;
+    height: 50px;
+    width: 50px;
+    left: 10px;
+}
+.signup-discord div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    line-height: 70px;
+    text-align: center;
+    user-select: none;
+    font-size: 50px;
+    font-family: "Itim";
+    color: white;
+}
+.scroller {
+    position: absolute;
+    bottom: 10%;
+    left: calc(50% - 25px);
+    width: 50px;
+    height: 50px;
+    rotate: -90deg;
+}
+.scroller:hover, .signup-discord:hover {
+    cursor: pointer;
+}
+.ticketstm {
+    position: absolute;
+    top: 100vh;
+    left: 0px;
+    width: 100%;
+    height: 50vh;
+    background-color: #FCBF49;
+}
