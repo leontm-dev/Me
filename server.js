@@ -28,3 +28,5 @@ app.use("/api/dev/signatur", SIGNATUR);
 // Seiten Routen
 const ME = require("./Routen/Seiten/me");
 app.use("/", ME);
+const BOTS = require("./Routen/Seiten/bots");
+app.use("/bots", BOTS);
