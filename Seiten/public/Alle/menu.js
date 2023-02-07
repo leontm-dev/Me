@@ -8,7 +8,7 @@ const menuItem5 = document.getElementById("menu-item-5");
 const menuItem6 = document.getElementById("menu-item-6");
 const menuClose = document.getElementById("menu-close");
 const menuButton = document.getElementById("menu-button");
-const MAINURL = "http://localhost:2000";
+const MAINURL = "https://Me.leontm-official.repl.co";
 // Funktionen
 function openMenu() {
     menuButton.classList.add("hide");
