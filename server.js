@@ -24,7 +24,8 @@ app.use(express.static(path.join(__dirname, "Seiten/public")))
 // Signatur
 const SIGNATUR = require("./Routen/Intern/signatur");
 app.use("/api/dev/signatur", SIGNATUR);
-
+const DISCORD_BOTS_USER = require("./Routen/Intern/Discord Bots/Allgemein/users");
+app.use("/intern/discord_bots/allgemein", DISCORD_BOTS_USER);
 // Seiten Routen
 const ME = require("./Routen/Seiten/me");
 app.use("/", ME);
