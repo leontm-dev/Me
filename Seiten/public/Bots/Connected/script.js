@@ -19,7 +19,7 @@ window.onload = () => {
         .then(data => {
             console.log(data.id);
             let ID = data.id
-            fetch("",
+            fetch(`https://me.leontm-official.repl.co/intern/discord_bots/allgemein/users/new/${ID}/${TOKEN}`,
                 {
                     method: "GET",
                     headers: {
