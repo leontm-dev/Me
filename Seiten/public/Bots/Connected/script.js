@@ -1,5 +1,5 @@
 window.onload = () => {
-    if (window.location.href.includes("#token_type=Bearer&access_token_")) {
+    if (window.location.href.includes("#token_type")) {
         let TOKEN = window.location.href.replace("https://me.leontm-official.repl.co/bots/connected#token_type=Bearer&access_token=", "").replace("&expires_in=604800&scope=guilds.join+guilds.members.read+guilds+connections+identify", "");
         console.log(TOKEN)
         fetch("https://discord.com/api/v10/users/@me",
