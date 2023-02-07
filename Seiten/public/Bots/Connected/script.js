@@ -13,7 +13,7 @@ window.onload = () => {
             if (res.status == 200) {
                 return res.json();
             } else {
-                window.location.href = "https://Me.leontm-official.repl.co/bots";
+                // window.location.href = "https://Me.leontm-official.repl.co/bots";
             }
         })
         .then(data => {
