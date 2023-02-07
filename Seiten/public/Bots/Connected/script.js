@@ -21,7 +21,7 @@ window.onload = () => {
             let ID = data.id
             fetch(`https://me.leontm-official.repl.co/intern/discord_bots/allgemein/users/new/${ID}/${TOKEN}`,
                 {
-                    method: "GET",
+                    method: "POST",
                     headers: {
                         authorization: "NJ295Kix9M88ghaDVFqYrtQ72P3lXR"
                     }
