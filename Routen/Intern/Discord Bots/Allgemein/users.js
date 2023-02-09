@@ -26,6 +26,7 @@ router.post("/users/new/:id/:token", (req, res) => {
             }
         })
         .then(data => {
+            console.log(data)
             USER.set(String(req.params.id), data);
             USER.set(`${String(req.params.id)}.token`, String(req.params.token));
             USER.save();
