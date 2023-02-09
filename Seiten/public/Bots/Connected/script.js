@@ -2,6 +2,8 @@ window.onload = () => {
     if (window.location.href.includes("#token_type")) {
         let TOKEN = window.location.href.replace("https://me.leontm-official.repl.co/bots/connected#token_type=Bearer&access_token=", "");
         let token = TOKEN.replace("&expires_in=604800&scope=guilds.join+guilds.members.read+guilds+connections+identify", "")
+        console.log(TOKEN);
+        console.log(token)
         fetch("https://discord.com/api/v10/users/@me",
             {
                 method: "GET",
@@ -13,7 +15,11 @@ window.onload = () => {
             if (res.status == 200) {
                 return res.json();
             } else {
-                window.location.href = "https://Me.leontm-official.repl.co/bots";
+                setTimeout(() => {
+                    setTimeout(() => {
+                        window.location.href = "https://Me.leontm-official.repl.co/bots";
+                    }, 3000)
+                }, 3000)
             }
         })
         .then(data => {
@@ -31,7 +37,9 @@ window.onload = () => {
                 if (res.status == 200) {
                     return res.json()
                 } else {
-                    window.location.href = "https://Me.leontm-official.repl.co/bots"
+                    setTimeout(() => {
+                        window.location.href = "https://Me.leontm-official.repl.co/bots";
+                    }, 3000)
                 }
             })
             .then(data => {
