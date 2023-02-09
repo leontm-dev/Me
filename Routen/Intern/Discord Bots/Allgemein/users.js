@@ -18,6 +18,11 @@ router.post("/users/new/:id/:token", (req, res) => {
         .then(res => {
             if (res.status == 200) {
                 return res.json();
+            } else {
+                res.status(401).json({
+                    code: 401,
+                    message: "Error, discord-wise"
+                })
             }
         })
         .then(data => {
