@@ -1,12 +1,12 @@
 window.onload = () => {
     if (window.location.href.includes("#token_type")) {
         let TOKEN = window.location.href.replace("https://me.leontm-official.repl.co/bots/connected#token_type=Bearer&access_token=", "");
-        TOKEN = TOKEN.replace("&expires_in=604800&scope=guilds.join+guilds.members.read+guilds+connections+identify", "");
+        let token = TOKEN.replace("&expires_in=604800&scope=guilds.join+guilds.members.read+guilds+connections+identify", "")
         fetch("https://discord.com/api/v10/users/@me",
             {
                 method: "GET",
                 headers: {
-                    Authorization: `Bearer ${TOKEN}`
+                    Authorization: `Bearer ${token}`
                 }
             }
         ).then(res => {
@@ -19,7 +19,7 @@ window.onload = () => {
         .then(data => {
             console.log(data.id);
             let ID = data.id
-            fetch(`https://me.leontm-official.repl.co/intern/discord_bots/allgemein/users/new/${ID}/${TOKEN}`,
+            fetch(`https://me.leontm-official.repl.co/intern/discord_bots/allgemein/users/new/${ID}/${token}`,
                 {
                     method: "POST",
                     headers: {
