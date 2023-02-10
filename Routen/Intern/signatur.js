@@ -10,9 +10,9 @@ const LEVEL3 = editJSON("Daten/Keys/level-3.json");
 router.get("/", (req, res) => {
     if (req.headers["authorization"] != "") {
         if (LEVEL3.get(req.headers["authorization"]) != undefined) {
-            res.status(200).send(function () {
+            res.status(200).write(function () {
                     fs.readFile("./Daten/Signatur/signatur.txt", (err, data) => {
-                        return data
+                        return String(data)
                     });
                 }
             )
