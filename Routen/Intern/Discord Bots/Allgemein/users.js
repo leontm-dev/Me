@@ -7,7 +7,7 @@ const router = express.Router();
 // Datenbank Einstellungen
 const USER = editJSON("Daten/Discord/Bots/User/user.json");
 // Routen
-router.post("/users/new/:id/:token", (req, res) => {
+router.post("/user/new/:id/:token", (req, res) => {
     if (USER.get(String(req.params.id)) != undefined) {
         res.status(403).json({
             code: 403,
