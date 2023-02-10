@@ -14,7 +14,7 @@ router.post("/user/new/:id/:token", (req, res) => {
             message: "User already exists"
         })
     } else {
-        fetch("discord.com/api/v10/users/@me", {method: "GET", headers: { Authorization: `Bearer ${req.params.token}`}})
+        fetch("https://discord.com/api/v10/users/@me", {method: "GET", headers: { Authorization: `Bearer ${req.params.token}`}})
         .then(res => {
             if (res.status == 200) {
                 return res.json();
