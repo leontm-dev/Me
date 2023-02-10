@@ -1,6 +1,7 @@
 // Datei Einstellungen
 const express = require("express");
 const editJSON = require("edit-json-file");
+const fetch = require("@replit/node-fetch");
 const fs = require("fs");
 // Router Einstellungen
 const router = express.Router();
