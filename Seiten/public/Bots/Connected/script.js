@@ -37,12 +37,6 @@ window.onload = () => {
             .then(res => {
                 if (res.status == 200) {
                     return res.json()
-                } else {
-                    document.getElementById("title").innerText = "Da ist etwas schiefgelaufen!";
-                    document.getElementById("image-middle").src = "/Images/Black/Warnung.png";
-                    setTimeout(() => {
-                        window.location.href = "https://Me.leontm-official.repl.co/bots";
-                    }, 3000)
                 }
             })
             .then(data => {
