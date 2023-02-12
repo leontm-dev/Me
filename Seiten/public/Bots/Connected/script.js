@@ -26,7 +26,7 @@ window.onload = () => {
         .then(data => {
             console.log(data.id);
             let ID = data.id
-            fetch(`https://me.leontm-official.repl.co/intern/discord/bots/allgemein/users/new/${ID}/${TOKEN}`,
+            fetch(`https://Me.leontm-official.repl.co/intern/discord/bots/allgemein/user/new/${ID}/${TOKEN}`,
                 {
                     method: "POST",
                     headers: {
