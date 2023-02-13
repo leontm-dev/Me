@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Diplomata+SC&family=Josefin+Sans:wght@500&family=Kdam+Thmor+Pro&family=Mulish:wght@500&family=Oswald&family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Allan&family=Amatic+SC:wght@700&family=Covered+By+Your+Grace&family=Itim&family=Lobster&family=Mulish&family=Orbitron&family=Permanent+Marker&family=Rubik+Vinyl&family=Sassy+Frass&family=Sevillana&family=Shadows+Into+Light&display=swap');
 body {
     margin: 0;
     padding: 0;
@@ -39,69 +40,8 @@ body {
     font-size: 50px;
     font-family: "Anton";
 }
-.start-presi {
-    position: absolute;
-    bottom: 15%;
-    left: 25%;
-    width: 20%;
-    height: 60px;
-    background-color: #003049;
-    border: none;
-    box-shadow: #d62828 3px 3px 2px;
-}
-.start-presi:hover {
-    cursor: pointer;
-}
-.start-presi img {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    width: 30px;
-    height: 30px;
-}
-.start-presi div {
-    position: absolute;
-    top: 0px;
-    left: 60px;
-    width: calc(100% - 120px);
-    text-align: center;
-    height: 100%;
+.intro a {
+    font-size: 45px;
+    font-family: "Lobster";
     color: #d62828;
-    font-size: 2em;
-    font-family: "Zen Dots";
-    vertical-align: middle;
-    line-height: 60px;
-}
-.skip-presi {
-    position: absolute;
-    bottom: 15%;
-    right: 25%;
-    width: 20%;
-    height: 60px;
-    background-color: #003049;
-    border: none;
-    box-shadow: #d62828 3px 3px 2px;
-}
-.skip-presi img {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    width: 30px;
-    height: 30px;
-}
-.skip-presi div {
-    position: absolute;
-    top: 0px;
-    left: 60px;
-    width: calc(100% - 120px);
-    text-align: center;
-    height: 100%;
-    color: #d62828;
-    font-size: 2em;
-    font-family: "Zen Dots";
-    vertical-align: middle;
-    line-height: 60px;
-}
-.skip-presi:hover {
-    cursor: pointer;
 }
